@@ -1,0 +1,520 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>LIDO SKYPARK | Waterfront Living Reimagined</title>
+<meta content="Discover the next 10-year golden investment zone at Lido Skypark. Premium freehold waterfront development managed by Banyan Living." name="description">
+<!-- Design System Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Inter:wght@400;500;600&amp;family=Noto+Sans+SC:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdea5",
+                    "on-surface-variant": "#45464d",
+                    "on-primary-container": "#7c839b",
+                    "inverse-surface": "#30312e",
+                    "surface-dim": "#dbdad5",
+                    "tertiary-fixed-dim": "#c1c8ca",
+                    "on-tertiary-fixed-variant": "#41484a",
+                    "on-secondary-container": "#785a1a",
+                    "outline-variant": "#c6c6cd",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#fed488",
+                    "primary-container": "#131b2e",
+                    "inverse-primary": "#bec6e0",
+                    "surface-variant": "#e4e2dd",
+                    "surface-container": "#f0eee9",
+                    "surface": "#fbf9f4",
+                    "on-secondary-fixed": "#261900",
+                    "on-tertiary-container": "#7e8587",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000000",
+                    "background": "#fbf9f4",
+                    "surface-tint": "#565e74",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#bec6e0",
+                    "outline": "#76777d",
+                    "primary-fixed": "#dae2fd",
+                    "on-tertiary-fixed": "#161d1f",
+                    "on-primary": "#ffffff",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "tertiary-fixed": "#dde4e6",
+                    "secondary-fixed-dim": "#e9c176",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#1b1c19",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-background": "#1b1c19",
+                    "secondary": "#775a19",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#f2f1ec",
+                    "tertiary-container": "#161d1f",
+                    "surface-container-high": "#eae8e3",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-bright": "#fbf9f4",
+                    "tertiary": "#000000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px",
+                    "gutter": "24px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "chinese-body": ["Noto Sans SC"],
+                    "headline-lg-mobile": ["Playfair Display"],
+                    "headline-md": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "display-md": ["Playfair Display"],
+                    "label-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "chinese-body": ["16px", {"lineHeight": "1.8", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-md": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background-color: rgba(251, 249, 244, 0.85);
+        }
+        .hero-gradient-light {
+            background: linear-gradient(to right, rgba(245, 243, 238, 0.95) 0%, rgba(245, 243, 238, 0.7) 40%, rgba(245, 243, 238, 0) 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .bento-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface-container-highest/90 backdrop-blur-md border-b border-outline-variant/30 shadow-sm shadow-[#000000]/5 h-20">
+<nav class="flex justify-between items-center w-full px-4 md:px-16 max-w-container-max mx-auto h-full">
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary dark:text-inverse-primary" href="#">LIDO SKYPARK</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-secondary-container transition-colors duration-300" href="#developments">Developments</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-secondary-container transition-colors duration-300" href="#location">Location</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-secondary-container transition-colors duration-300" href="#management">Management</a>
+<a class="text-on-surface-variant dark:text-surface-variant text-label-md font-label-md hover:text-secondary-container transition-colors duration-300" href="#contact">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="hidden sm:inline-block text-label-md font-label-md text-on-surface-variant">EN/ZH</span>
+<a class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-label-md font-label-md hover:bg-secondary transition-all active:scale-95 duration-200" href="https://wa.link/9dupcs" target="_blank">
+                    Book a Private Viewing
+                </a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[700px] flex items-center overflow-hidden pt-20 bg-surface-container-low">
+<div class="absolute inset-0 z-0 flex justify-end">
+<img alt="Luxury Waterfront Living" class="w-full h-full object-cover lg:object-right lg:w-full" src="https://i.imgur.com/cYa3Yax.png">
+<div class="absolute inset-0 hero-gradient-light lg:block hidden"></div>
+<div class="absolute inset-0 bg-surface-container-low/60 lg:hidden"></div>
+</div>
+<div class="relative z-10 w-full px-4 md:px-16 max-w-container-max mx-auto">
+<div class="max-w-3xl space-y-6">
+<h1 class="text-display-lg text-primary font-display-lg leading-tight animate-fade-in-up">Secure Your Legacy: Own the Future of Johor Bahru’s International Waterfront District.</h1>
+<p class="text-on-surface-variant text-headline-md font-headline-md">
+                        Discover the Next 10-Year Golden Investment Zone Just Minutes from the RTS Link!
+                    </p>
+<p class="text-on-surface-variant/80 text-body-lg font-body-lg max-w-2xl">
+                        Own a premium freehold mixed-development at Lido Skypark, managed by the prestigious Banyan Living. Enjoy uncompromised luxury and a 2.5km scenic waterfront promenade.
+                    </p>
+<div class="pt-8">
+<a class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 rounded-full text-label-md font-bold hover:bg-secondary transition-all shadow-xl" href="https://wa.link/9dupcs" target="_blank">
+                            Secure Your VIP Viewing Access Now!
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section (Pain Points) -->
+
+<!-- Solution Section -->
+<section class="py-[120px] bg-surface-container-low overflow-hidden" id="developments">
+<div class="px-4 md:px-16 max-w-container-max mx-auto">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="w-full lg:w-1/2 relative">
+<div class="absolute -top-8 -left-8 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl z-0"></div>
+<img alt="Lido Skypark Aerial View" class="relative z-10 w-full rounded-2xl shadow-2xl object-cover" src="https://i.imgur.com/fX0moIa.png">
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-primary-container/5 rounded-full blur-3xl z-0"></div>
+</div>
+<div class="w-full lg:w-1/2 space-y-8">
+<span class="text-secondary font-label-md tracking-widest uppercase">The Solution</span>
+<h2 class="text-display-md font-display-md leading-tight">Lido Skypark: Your Sanctuary for Investment &amp; Lifestyle</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary">Ultimate RTS &amp; CIQ Proximity</h4>
+<p class="text-on-surface-variant font-body-md">Minutes away from international transit links, making cross-border commuting seamless.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary">Elite Banyan Living Brand Management</h4>
+<p class="text-on-surface-variant font-body-md">World-class hospitality standards ensure your property remains a premium asset.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary">International Zoning &amp; Easy Entry</h4>
+<p class="text-on-surface-variant font-body-md">Designed for global investors with a straightforward purchase process and friendly regulations.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary">The Next 10-Year Growth Engine</h4>
+<p class="text-on-surface-variant font-body-md">Strategically located in the heart of the Johor-Singapore Special Economic Zone.</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="w-full mb-16 flex justify-center">
+  <div class="w-full max-w-container-max">
+    <img src="https://i.imgur.com/06yuFWb.png" alt="Project Facts and Figures" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+  </div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-20 bg-surface-container-low">
+  <div class="px-4 md:px-16 max-w-container-max mx-auto">
+    <div class="w-full">
+      <img src="https://i.imgur.com/Lu0H8gj.png" alt="The Perspectives - Waterfront Residences and Main Pool" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+    </div>
+  </div>
+</section><section class="py-[120px] bg-surface-container-low" id="layouts">
+  <div class="px-4 md:px-16 max-w-container-max mx-auto">
+    <div class="text-center mb-16">
+      <span class="text-secondary font-label-md tracking-widest uppercase">Floor Plans</span>
+      <h2 class="text-display-md font-display-md mt-4">Layout</h2>
+    </div>
+    <div class="grid grid-cols-1 gap-12">
+      <div class="space-y-4">
+        <img src="https://i.imgur.com/VuWYt5t.png" alt="Type A Layout" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+        <p class="text-center font-bold text-primary text-headline-md">Type A - 463 SQ.FT. (1 BEDROOM)</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://i.imgur.com/OCZe1pi.png" alt="Type B Layout" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+        <p class="text-center font-bold text-primary text-headline-md">Type B - 667 SQ.FT. (2 BEDROOMS)</p>
+      </div>
+      <div class="space-y-4">
+        <img src="https://i.imgur.com/y6sbmT9.png" alt="Type C Layout" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+        <p class="text-center font-bold text-primary text-headline-md">Type C - 807 SQ.FT. (3 BEDROOMS)</p>
+      </div><div class="space-y-4 mt-12">
+  <img src="https://i.imgur.com/nvfpuGt.png" alt="Detailed Floor Plan Overview" class="w-full h-auto rounded-2xl shadow-lg object-cover">
+  <p class="text-center font-bold text-primary text-headline-md">Detailed Floor Plan Overview</p>
+</div>
+    </div>
+  </div>
+</section><section class="py-[120px] bg-surface" id="location">
+<div class="px-4 md:px-16 max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="text-secondary font-label-md tracking-widest uppercase">Connected Living</span>
+<h2 class="text-display-md font-display-md mt-4">At the Heart of Connectivity</h2>
+<p class="text-on-surface-variant font-body-lg mt-4 max-w-2xl mx-auto">Strategically located to provide seamless access to major transit hubs, educational institutions, and healthcare centers.</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-16 items-start">
+<div class="w-full lg:w-3/5">
+<div class="rounded-3xl overflow-hidden shadow-xl border border-outline-variant/30">
+<img alt="Lido Skypark Location Map" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMZHMKvwaalYjTPvnk7uWQnAwuq4GG3YiITBEac1pEBOsRY9RMI-1lJ2hU2f_3Nq_vJP89FbrfcD93ksPJqQOCQW4FmNtTq020TPesf3OTHLLJ3kpFP5BKi5CQNttUiJBW8QyaFHexBvxOnndtyMGmXTWvHAvJGU6tU9Ybbu5jzYj2CX0aTr0sOOj_OCCg_TZKJo8Ghsby12etZzENdQyie5Dc1aL-_6tkbzjAmGvPVMIFQJAKStAGvgeUaKywx6BDQictuWklLun7">
+</div>
+</div>
+<div class="w-full lg:w-2/5 space-y-8">
+<h3 class="text-headline-lg font-headline-lg text-primary">Proximity to Key Landmarks</h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">directions_subway</span>
+<span class="font-bold text-primary">RTS Link &amp; CIQ</span>
+</div>
+<span class="text-secondary font-bold">2 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">local_hospital</span>
+<span class="font-bold text-primary">KPJ Specialist Hospital</span>
+</div>
+<span class="text-secondary font-bold">3 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">golf_course</span>
+<span class="font-bold text-primary">Ponderosa Golf &amp; Country Club</span>
+</div>
+<span class="text-secondary font-bold">8 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">school</span>
+<span class="font-bold text-primary">Monash University</span>
+</div>
+<span class="text-secondary font-bold">10 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">shopping_bag</span>
+<span class="font-bold text-primary">AEON Tebrau City</span>
+</div>
+<span class="text-secondary font-bold">12 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">flight_takeoff</span>
+<span class="font-bold text-primary">Senai International Airport</span>
+</div>
+<span class="text-secondary font-bold">25 KM</span>
+</div>
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">flight</span>
+<span class="font-bold text-primary">Changi Airport (Singapore)</span>
+</div>
+<span class="text-secondary font-bold">35 KM</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all" href="https://wa.link/9dupcs" target="_blank">
+                    Plan Your Commute <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof Section -->
+<section class="py-[120px] bg-primary-container text-white">
+<div class="px-4 md:px-16 max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-headline-lg font-headline-lg mb-4">Trusted by the Discerning</h2>
+<p class="text-on-primary-container font-body-md max-w-2xl mx-auto">Join hundreds of smart Malaysian and international families who have already secured their future at Johor Bahru's premier waterfront address.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Testimonial 1 -->
+<div class="bg-surface/5 p-8 rounded-2xl backdrop-blur-md border border-white/10 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+<img alt="Singapore Professional" class="w-24 h-24 rounded-full object-cover border-4 border-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQlaUstVr8QyzP1sjZT-j40t8O6qzKgOxUZRu-Db5vb_VS3qJHZf01mejFxJ5LiVPq8LAiMI5T4EifcFSWDHvzgzAcf0KZ-PGjj3_9OF7e1QmYFbrnxKzwQO0ORVyfWo2QPNLGsohSHOE0fMZcXgB4-5wcfJIbGfqQ-SmyaJppSEh5Zq0yGQv5Br2H01vk-n_qUu-GABGorRxpGmuWPUvL5aPkbub3qq5AymBOBITnbUR6OF51C_eoU-7xRaXiKLLkXjEHqpsCQthv">
+<div>
+<p class="italic text-lg font-body-lg mb-4 text-white/90">"The proximity to the RTS link was the clincher for me. I can enjoy a massive, luxury waterfront home for a fraction of my Singapore rent while maintaining my career in the CBD."</p>
+<h5 class="font-bold text-secondary-container">David L.</h5>
+<span class="text-sm opacity-70">Singapore-based Professional</span>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface/5 p-8 rounded-2xl backdrop-blur-md border border-white/10 flex flex-col items-center md:items-start text-center md:text-left gap-6">
+<img alt="Savvy Investor" class="w-24 h-24 rounded-full object-cover border-4 border-secondary-container" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfJw4AbanrZxp_PU67GOQDrjP2nbGUtnwo22NFPLCLar8cT7KCnYCF4cyAA85ze_k-XjiqatwXhx7LRbty7umEu6MlKDcJQ-PFHREFAXiSdelVaBYm47Y1mpPYnV64elZXqMM46f7IK0Id1fHb__cdEhDVErd6zUTH6tpI2SEwm0Emo1urj66d_q8JYM_7UrAC8RhfwoeKpC57R8hJQYwG7JK-qbCsvbh2yz_-gax-BFVa1JMmq-YyNaB7XS6BmypNfpZ-UnfOmQVL">
+<div>
+<p class="italic text-lg font-body-lg mb-4 text-white/90">"As an investor, the Banyan Living management gives me total peace of mind. I know my asset is being maintained to international luxury standards, ensuring strong capital appreciation."</p>
+<h5 class="font-bold text-secondary-container">Sarah W.</h5>
+<span class="text-sm opacity-70">Property Investor</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Offer & Urgency Section -->
+<section class="py-[120px] bg-surface-container-low" id="cta">
+<div class="px-4 md:px-16 max-w-container-max mx-auto">
+<div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-outline-variant/30">
+<div class="lg:w-1/2 p-12 lg:p-20 space-y-8">
+<div>
+<span class="text-error font-bold text-label-md tracking-widest uppercase mb-4 block">Limited Opportunity</span>
+<h2 class="text-display-md font-display-md leading-tight text-primary">Exclusive Investor Launch Package</h2>
+</div>
+<ul class="space-y-4">
+<li class="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">star</span>
+                                Freehold Unit Status
+                            </li>
+<li class="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">verified_user</span>
+                                Banyan Living Professional Management
+                            </li>
+<li class="flex items-center gap-4 text-body-lg font-body-lg text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary">local_offer</span>
+                                Early-Bird Unit Selection Priority
+                            </li>
+<li class="flex items-center gap-4 text-body-lg font-body-lg text-secondary font-bold">
+<span class="material-symbols-outlined">payments</span>
+                                Special Investor Rebate for First 20 Signups
+                            </li>
+</ul>
+<div class="bg-error/5 p-6 rounded-lg border border-error/20">
+<p class="text-error font-bold">Urgency: Prime waterfront units are selling fast. Secure your price before the next phase increase.</p>
+</div>
+</div>
+<div class="lg:w-1/2 bg-primary-container p-12 lg:p-20 text-white flex flex-col justify-center">
+<div class="flex flex-col items-center justify-center space-y-6 text-center"><div class="w-24 h-24 bg-secondary-container/20 rounded-full flex items-center justify-center mb-4"><span class="material-symbols-outlined text-secondary-container text-5xl">chat</span></div><h3 class="text-headline-md font-headline-md">Ready to Secure Your Unit?</h3><p class="text-on-primary-container font-body-md">Skip the forms and speak directly with our VIP relationship managers via WhatsApp for instant priority assistance.</p><a href="https://wa.link/9dupcs" target="_blank" class="w-full bg-secondary-container text-on-secondary-container py-5 rounded-full font-bold text-lg hover:bg-secondary-fixed transition-all shadow-lg active:scale-95 flex items-center justify-center gap-3">Message us on WhatsApp <span class="material-symbols-outlined">arrow_forward</span></a><p class="text-xs opacity-50">Average response time: &lt; 5 minutes</p></div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-[120px] bg-surface">
+<div class="max-w-container-max mx-auto px-4 md:px-16">
+<div class="mb-20">
+<h3 class="text-headline-lg font-headline-lg mb-10 text-center">Frequently Asked Questions</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="space-y-4 p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<h4 class="font-bold text-primary">Is Lido Skypark freehold?</h4>
+<p class="text-on-surface-variant font-body-md">Yes, the development is 100% freehold, ensuring long-term ownership security for you and your future generations.</p>
+</div>
+<div class="space-y-4 p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<h4 class="font-bold text-primary">How far is it from the RTS?</h4>
+<p class="text-on-surface-variant font-body-md">Lido Skypark is strategically positioned just minutes from the upcoming RTS Link, offering unprecedented connectivity to Singapore.</p>
+</div>
+<div class="space-y-4 p-6 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+<h4 class="font-bold text-primary">Who manages the property?</h4>
+<p class="text-on-surface-variant font-body-md">The development is managed by Banyan Living, known for elite hospitality and world-class asset maintenance standards.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant py-16 px-4 md:px-16">
+<div class="max-w-container-max mx-auto">
+<!-- Global Footer Links -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 pt-4">
+<div class="md:col-span-1">
+<a class="text-headline-md font-headline-md font-bold text-primary mb-6 block" href="#">LIDO SKYPARK</a>
+<p class="text-on-surface-variant text-body-md">Lido Waterfront Boulevard Project Briefing. Premier living at the edge of tomorrow.</p>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-md font-bold uppercase tracking-widest text-primary">Explore</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Developments</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#location">Location</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Investment Guide</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-md font-bold uppercase tracking-widest text-primary">Legal</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Legal Disclaimers</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="text-label-md font-bold uppercase tracking-widest text-primary">Connect</h5>
+<ul class="space-y-2">
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Contact Us</a></li>
+<li class=""><a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">FAQ</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-label-md">© 2024 Banyan Living Management. All Rights Reserved.</p>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary">public</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary">share</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-secondary">mail</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Smooth scroll for anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('translate-y-10');
+                    entry.target.classList.remove('opacity-0');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-card').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(card);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
